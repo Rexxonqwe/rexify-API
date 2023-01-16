@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+span {
+  background-color: #bfbfbf;
+  padding: .4rem .8rem;
+  border-radius: .3rem; }
+
+code {
+  background-color: #ffd08a;
+  padding: 1px 3px;
+  border-radius: 3px; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.paragraph {
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem; }
+.insta-id > a{
+  text-decoration: none;
+  color : #0000ff;
+}
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 700; }
+
+.heading-secondary {
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid #bfbfbf;
+  display: inline-block; }
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 700; }
+
+.http-method-lable {
+  font-weight: 700; }
+
+.search-list:link, .search-list:visited {
+  text-decoration: none;
+  color: #2acfcf;
+  border-bottom: 1px solid #2acfcf;
+  transition: all 0.3s;
+  padding: .6rem .5rem; }
+
+.search-list:hover {
+  color: #fff;
+  background-color: #2acfcf; }
+
+.queries {
+  height: 100vh;
+  padding: 3rem 0; }
+
+.insta-id {
+  font-size: 2rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 3rem; }
+
+.u-margin-bottom-very-small {
+  margin-bottom: 0.8rem; }
+
+.btn {
+  background-color: #2acfcf;
+  padding: .8rem 1.3rem;
+  font-size: 1.8rem;
+  border: none;
+  color: #fff;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all .2s; }
+  .btn:hover {
+    background-color: #f54d4d; }
+
+.important__list {
+  margin-left: 2rem;
+  font-size: 1.6rem; }
+
+.table, th, tr, td {
+  border: 1px solid #000;
+  padding: 1.5rem; }
+
+.table {
+  font-size: 1.6rem;
+  border-collapse: collapse;
+  text-align: left; }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.container {
+  max-width: 85vw;
+  margin: 3rem auto; }
+
+.announcement {
+  background-color: #2acfcf;
+  height: auto; }
+  .announcement__heading {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 85vw;
+    margin: 0 auto; }
+
+.color-filter--red{
+  filter: invert(7%) sepia(96%) saturate(7391%) hue-rotate(247deg) brightness(115%) contrast(141%);
+}
+
+.illustration{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+@media (max-width : 840px){
+  .heading-secondary {
+    font-size: 2rem;
+ }
+  
+  .heading-tertiary {
+    font-size: 1.6rem;
+  }
+
+  .paragraph td, th{
+    font-size: 1.4rem;
+  }
+  .paragraph{
+    width: 80vw;
+  }
+  .search-list:link, .search-list:visited {
+    padding: .2rem .3rem; 
+  }
+  .table {
+    width: 100vw;
+  }
+}
