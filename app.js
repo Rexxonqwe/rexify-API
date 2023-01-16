@@ -2,6 +2,7 @@ const express = require("express");
 const productRouter = require("./routes/productRoute");
 const viewsRouter = require("./routes/viewsRouter");
 
+const compression = require("compression");
 const rateLimit = require("express-rate-limit");
 const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
@@ -36,6 +37,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ limit: "10kb" }));
 
+app.use(compression());
+
+// Routes
 app.use("/", viewsRouter);
 app.use("/api/v1/products", productRouter);
 

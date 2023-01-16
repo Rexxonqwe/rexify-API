@@ -17,7 +17,7 @@ exports.getProducts = async (req, res, next) => {
       data: products,
     });
   } catch (err) {
-    console.log(`${err}💥💥💥💥`);
+    // console.log(`${err}💥💥💥💥`);
     res.status(400).json({
       status: "fail",
       message: err.message,
@@ -36,7 +36,7 @@ exports.getProduct = async (req, res, next) => {
       data: product,
     });
   } catch (err) {
-    console.log(`${err}💥💥💥💥`);
+    // console.log(`${err}💥💥💥💥`);
     res.status(400).json({
       status: "fail",
       message: err.message,
