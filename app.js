@@ -8,6 +8,7 @@ const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
 const xss = require("xss-clean");
 const hpp = require("hpp");
+const cors = require("cors");
 
 const app = express();
 const path = require("path");
@@ -28,6 +29,11 @@ app.use(mongoSanitize());
 
 // Data sanitization against XSS
 app.use(xss());
+
+// CORS
+app.use(cors());
+
+app.options("*", cors());
 
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
